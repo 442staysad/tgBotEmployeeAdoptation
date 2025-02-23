@@ -1,0 +1,16 @@
+[Unit]
+Description=bot support
+After=network.target
+
+
+[Service]
+WorkingDirectory=/home/sdo/BotSupport
+ExecStart=/usr/bin/python3 /home/sdo/BotSupport/app.py
+
+
+
+[Install]
+WantedBy=multi-user.target
+
+
+

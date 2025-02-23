@@ -1,0 +1,10 @@
+[Unit]
+Description=Telegram Adoptation bot
+After=network.target
+
+[Service]
+WorkingDirectory=/home/sdo/TelegramAdoptationbot/adoptationbot/
+ExecStart=/usr/bin/python3 /home/sdo/TelegramAdoptationbot/adoptationbot/bot.py
+
+[Install]
+WantedBy=multi-user.target
